@@ -18,6 +18,9 @@ module.exports = {
         black: "#000000",
         white: "#ffffff",
       }),
+      cursor: {
+        star: "url('/Users/jexica/Sync/CODE/HaluPaleta/client/src/images/star-cursor.png'), pointer",
+      },
     },
   },
   plugins: [],
