@@ -28,7 +28,7 @@ function sketch(p) {
       p.img.height / 1.25
     );
 
-    p.image(p.img2, 50, 500, p.img2.width / 1.25, p.img2.height / 1.25);
+    p.image(p.img2, 50, 470, p.img2.width / 1.25, p.img2.height / 1.25);
 
     // p.filter(p.BLUR, 1);
     // p.image(p.img, p.width, p.height, p.img.width / 2, p.img.height / 2);
