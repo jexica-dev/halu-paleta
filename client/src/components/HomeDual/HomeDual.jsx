@@ -1,11 +1,14 @@
 import React from "react";
 import HaluHalf from "./HaluHalf";
 import PaletaHalf from "./PaletaHalf";
+import halulogo from "../../images/halulogo.svg";
+import paletalogo from "../../images/paletapop.svg";
 
 export default function HomeDual() {
   return (
     <div className=" w-screen h-screen ">
       <div className="relative inset-0 bottom-0 h-full lg:absolute lg:inset-x-0 lg:w-1/2 lg:h-full lg:float-left md:w-1/2 md:h-full md:float-left sm:w-full sm:h-1/2 ">
+        {/* <img src={halulogo} alt="" srcset="" /> */}
         <HaluHalf />
       </div>
 
