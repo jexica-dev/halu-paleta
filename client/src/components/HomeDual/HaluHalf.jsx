@@ -1,5 +1,5 @@
 import React from "react";
-import halohalo from "../../images/halohalo.png";
+// import halohalo from "../../images/halohalo.png";
 import "../HomeDual/HaluHalf.css";
 import { ReactP5Wrapper } from "react-p5-wrapper";
 import sketch from "../P5/sketchHalu.js";

@@ -1,14 +1,17 @@
-import paleta from "../../images/paleta-90.png";
+// import paleta from "../../images/paleta-90.png";
 import React, { useEffect, useState } from "react";
+import { ReactP5Wrapper } from "react-p5-wrapper";
+import sketch from "../P5/sketchPaleta.js";
 
 export default function PaletaHalf() {
   return (
     <div className="w-full h-full relative">
-      <img
-        src={paleta}
-        alt="paleta ice cream"
-        className=" absolute inset-x-0 bottom-0 w-full sm:w-screen md:w-full lg:w-full"
-      />
+      <div className="star-cursor overflow-hidden w-full h-full relative bg-yellow">
+        <ReactP5Wrapper
+          className=" z-50 -mt-50 bg-transparent"
+          sketch={sketch}
+        />
+      </div>
     </div>
   );
 }
