@@ -7,6 +7,9 @@ function sketch(p) {
     // p.img = p.loadImage("https://i.imgur.com/bqls1TK.png");
     p.img = p.loadImage(halohalo);
     p.img2 = p.loadImage(halulogo);
+
+    p.img_x = 0;
+    p.img_y = 0;
   };
 
   p.draw = function () {
@@ -20,10 +23,17 @@ function sketch(p) {
 
     // p.strokeWeight(0.25);
 
+    // lerp img_x and img_y towards the mouse position
+    // weight img_x and img_y stronger to slow down the animation
+
+    let alpha = 0.2;
+    p.img_x = p.img_x * (1 - alpha) + p.mouseX * alpha;
+    p.img_y = p.img_y * (1 - alpha) + p.mouseY * alpha;
+
     p.image(
       p.img,
-      p.mouseX - p.width / 4.5,
-      p.mouseY - p.height / 4.5,
+      p.img_x - p.width / 4.5,
+      p.img_y - p.height / 4.5,
       p.img.width / 1.25,
       p.img.height / 1.25
     );
