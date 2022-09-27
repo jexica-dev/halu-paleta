@@ -9,7 +9,7 @@ export default function PaletaBg() {
       <Link to="/" exact>
         <img
           src={paletaLogo}
-          className="absolute z-50 right-10 bottom-10"
+          className="absolute z-40 right-10 bottom-10"
           alt=""
           srcset=""
         />
