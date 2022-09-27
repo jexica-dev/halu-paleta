@@ -1,8 +1,6 @@
 import React from "react";
 import HaluHalf from "./HaluHalf";
 import PaletaHalf from "./PaletaHalf";
-import halulogo from "../../images/halulogo.svg";
-import paletalogo from "../../images/paletapop.svg";
 
 export default function HomeDual() {
   return (
