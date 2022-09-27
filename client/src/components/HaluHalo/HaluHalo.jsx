@@ -2,7 +2,7 @@ import React from "react";
 import { ReactP5Wrapper } from "react-p5-wrapper";
 import HaloNav from "./HaloNav";
 import sketchHex from "../HaluHalo/sketchHaloHex2.js";
-import "../HaluHalo/HaluHalo.css";
+// import "../HaluHalo/HaluHalo.css";
 
 export default function HaluHalo() {
   return (

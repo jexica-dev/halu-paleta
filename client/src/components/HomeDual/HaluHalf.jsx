@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 
 export default function HaluHalf() {
   return (
-    <div className="star-cursor overflow-hidden w-full h-full relative bg-transparent">
+    <div className=" overflow-hidden w-full h-full relative bg-transparent">
       <div className="absolute top-0">
         <ReactP5Wrapper className=" -mt-50 bg-transparent" sketch={sketch} />
       </div>
