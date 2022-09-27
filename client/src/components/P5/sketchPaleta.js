@@ -14,7 +14,7 @@ function sketchPaleta(p) {
       p.fill(172, 158, 255, 5);
       p.rect(0, 0, 1000, 1000);
     } else {
-      p.fill(0);
+      p.clear();
     }
 
     // p.strokeWeight(0.25);

@@ -3,25 +3,23 @@ import haloImg from "../../images/halohalo.png";
 
 function sketchHex(p) {
   p.setup = function () {
-    p.createCanvas(700, 730);
+    p.createCanvas(p.windowWidth, p.windowHeight);
     p.img = p.loadImage(haloImg);
-    console.log("halo hex setup called");
     // p.img2 = p.loadImage(halulogo);
   };
 
   p.draw = function () {
-    // p.background(255, 236, 72, 1);
+    p.image(
+      p.img,
+      0,
+      p.windowHeight - (p.img.height * 1.25) / 1.75,
+      p.img.width * 1.25,
+      p.img.height * 1.25
+    );
+  };
 
-    // if (!p.mousePressed) {
-    //   p.fill(255, 236, 72, 3);
-    //   p.rect(0, 0, 1000, 1000);
-    // } else {
-    //   p.fill(0);
-    // }
-
-    // p.strokeWeight(0.25);
-
-    p.image(p.img, 0, 450, p.img.width, p.img.height);
+  p.windowResized = function () {
+    p.resizeCanvas(p.windowWidth, p.windowHeight);
   };
 }
 

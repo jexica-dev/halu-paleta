@@ -8,7 +8,7 @@ import haloFave from "../../images/halu-faves.svg";
 export default function HaloNav() {
   return (
     <>
-      <div className=" ">
+      <div className="z-50">
         <Link to="/" exact>
           <img
             className="absolute top-10 right-10"

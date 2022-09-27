@@ -15,7 +15,7 @@ function sketch(p) {
       p.fill(255, 236, 72, 3);
       p.rect(0, 0, 1000, 1000);
     } else {
-      p.fill(0);
+      p.clear();
     }
 
     // p.strokeWeight(0.25);
