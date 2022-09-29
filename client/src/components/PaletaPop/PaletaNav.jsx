@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import PaletaModal from "./PaletaModal";
 import paleta from "../../images/paleta.png";
+import PaletaSocial from "./PaletaSocial";
 
 export default function PaletaNav() {
   const [modalOpen, setModalOpen] = useState(false);
@@ -42,14 +43,14 @@ export default function PaletaNav() {
           <div className="fixed  w-140 h-132 place-self-center bg-white  rounded-3xl">
             {!modalOpen ? null : (
               <>
-                <div className="w-full justify-end">
+                <div className="w-full relative ">
                   <button
                     onClick={() => {
                       setModalOpen(false);
                     }}
-                    className="text-right"
+                    className=" px-4 py-2 font-whyteinktrap font-semibold text-lg absolute top-0 right-0 rounded-tr-[23px] rounded-bl-[20px] pb-3 hover:bg-pink-300 hover:text-black"
                   >
-                    x
+                    close
                   </button>
                 </div>
                 <PaletaModal modalData={modalData} />
@@ -64,9 +65,17 @@ export default function PaletaNav() {
           className="cursor-pointer w-28 h-28  rounded-full border-[13px] bg-emerald-600  border-rose-900 text-4xl "
           onClick={() => {
             setModalData({
-              title: "Welcome!",
-              body: `
-            `,
+              title: "Seasonal Flavor: Horchata Marias",
+              body: (
+                <>
+                  {" "}
+                  <img
+                    src="https://twemoji.maxcdn.com/v/latest/svg/1f509.svg"
+                    alt=""
+                    width={30}
+                  />{" "}
+                </>
+              ),
             });
             setModalOpen((prevState) => !prevState);
           }}
@@ -88,13 +97,10 @@ export default function PaletaNav() {
                 <>
                   <div className="">
                     <img className="w-128" src={paleta} alt="" width="100%" />
-                    <div className="w-full h-96 pt-3 px-3">
+                    <div className="w-full h-96 pt-5 px-3">
                       <form className="">
-                        <div className="grid grid-cols-7 place-content-center">
-                          <select
-                            placeholder="Flavors"
-                            className="col-span-3  bg-white px-4 leading-tight border border-black"
-                          >
+                        <div className="grid grid-cols-7 place-content-center text-lg">
+                          <select className="col-span-3  bg-white px-4 leading-tight border border-black hover:bg-pink-300 hover:text-white">
                             <option value="grapefruit">Grapefruit</option>
                             <option value="lime">Strawberry Lime</option>
                             <option value="horchata">Horchata Marias</option>
@@ -116,7 +122,7 @@ export default function PaletaNav() {
                               </div>
                             </div>
                           </div> */}
-                          <div className="col-span-2 text-center p-3 border border-black hover:bg-black hover:text-white ">
+                          <div className="col-span-2 text-center p-3 border border-black hover:bg-pink-300 hover:text-white ">
                             Add to Cart
                           </div>
                           <label className=" text-center p-3 border border-black">
@@ -144,9 +150,32 @@ export default function PaletaNav() {
           className=" cursor-pointer w-28 h-28  rounded-full border-[13px] border-indigo-500 bg-pink-300 text-4xl"
           onClick={() => {
             setModalData({
-              title: "About ¡Paleta Pop!",
-              body: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis est esse labore eius ipsum aliquam praesentium obcaecati numquam perferendis culpa.
-              `,
+              title: "Our Story",
+              body: (
+                <>
+                  <div className=" text-xl leading-snug">
+                    At{" "}
+                    <span className="text-pink-400 font-bold italic">
+                      ¡Paleta Pop!
+                    </span>
+                    , we’re bringing organic Mexican paletas from our kitchen to
+                    yours!
+                    <br className="mb-2" />
+                    Reconnecting and hybridizing our family recipes, each paleta
+                    is lovingly made with the intention to combine the highest
+                    quality ingredients into a flavorful, frozen delicacy.
+                    <br className="mb-2" />
+                    All produce are grown and sourced locally. Our paletas are
+                    changed seasonally and uniquely created by our family.
+                    <br className="mb-2" />
+                    Order online for pickup or delivery within a 5-mile radius
+                    our Brooklyn location.
+                    <br className="mb-2" />
+                    Connect with us over social media and share PaletaPop!
+                    <PaletaSocial />
+                  </div>
+                </>
+              ),
             });
             setModalOpen((prevState) => !prevState);
           }}
