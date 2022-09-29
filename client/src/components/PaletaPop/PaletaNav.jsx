@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import PaletaModal from "./PaletaModal";
 import paleta from "../../images/paleta.png";
 import PaletaSocial from "./PaletaSocial";
+import horchata from "../../images/horchata.png";
 
 export default function PaletaNav() {
   const [modalOpen, setModalOpen] = useState(false);
@@ -65,15 +66,12 @@ export default function PaletaNav() {
           className="cursor-pointer w-28 h-28  rounded-full border-[13px] bg-emerald-600  border-rose-900 text-4xl "
           onClick={() => {
             setModalData({
-              title: "Seasonal Flavor: Horchata Marias",
+              title: "Seasonal: Horchata Marias",
               body: (
                 <>
-                  {" "}
-                  <img
-                    src="https://twemoji.maxcdn.com/v/latest/svg/1f509.svg"
-                    alt=""
-                    width={30}
-                  />{" "}
+                  <div className="flex flex-col  w-full place-content-center">
+                    <img src={horchata} alt="" width={350} />{" "}
+                  </div>
                 </>
               ),
             });
