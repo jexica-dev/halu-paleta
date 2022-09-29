@@ -18,8 +18,21 @@ module.exports = {
         black: "#000000",
         white: "#ffffff",
       }),
-      cursor: {
-        star: "url('/Users/jexica/Sync/CODE/HaluPaleta/client/src/images/star-cursor.png'), pointer",
+      spacing: {
+        128: "32rem",
+        132: "34rem",
+        140: "40rem",
+        150: "50rem",
+        180: "90rem",
+        container: "1700px",
+      },
+      fontFamily: {
+        gintonord: ["ABC Ginto Nord"],
+        ginto: ["ABC Ginto"],
+        Prophet: ["ABC Prophet"],
+        viafont: ["ABC Viafont"],
+        whytemono: ["ABC Whyte Mono"],
+        whyteinktrap: ["ABC Whyte Inktrap"],
       },
     },
   },

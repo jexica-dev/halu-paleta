@@ -2,6 +2,40 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "ABC Whyte Inktrap";
+  src: url("../src/fonts/ABCWhyteInktrapSemi-Mono-Regular-Trial.otf");
+}
+
+@font-face {
+  font-family: "ABC Prophet";
+  src: url("../src/fonts/ABCProphetVariable-Trial.ttf");
+  font-weight: thin normal medium bold;
+}
+
+@font-face {
+  font-family: "ABC Ginto";
+  src: url("../src/fonts/ABCGintoNormalVariable-Trial.ttf");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "ABC Ginto Nord";
+  src: url("../src/fonts/ABCGintoNordVariable-Trial.ttf");
+  font-weight: thin normal medium bold;
+}
+
+@font-face {
+  font-family: "ABC Whyte Mono";
+  src: url("../src/fonts/ABCWhyteMono-Regular-Trial.otf");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "ABC Viafont";
+  src: url("../src/fonts/ABCViafont-Regular-Trial.otf");
+  font-weight: normal;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
