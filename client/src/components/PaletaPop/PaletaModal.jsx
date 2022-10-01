@@ -7,7 +7,7 @@ export default function PaletaModal(props) {
         {props.modalData.title}
       </p>
 
-      <p className="pt-2  text-sm text-left font-whyteinktrap pb-1 px-5">
+      <p className="  text-sm text-left font-whyteinktrap pb-1 px-5">
         {props.modalData.body}
       </p>
     </div>

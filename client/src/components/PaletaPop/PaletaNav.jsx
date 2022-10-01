@@ -152,25 +152,32 @@ export default function PaletaNav() {
               body: (
                 <>
                   <div className=" text-xl leading-snug">
-                    At{" "}
-                    <span className="text-pink-400 font-bold italic">
-                      ¡Paleta Pop!
-                    </span>
-                    , we’re bringing organic Mexican paletas from our kitchen to
-                    yours!
-                    <br className="mb-2" />
-                    Reconnecting and hybridizing our family recipes, each paleta
-                    is lovingly made with the intention to combine the highest
-                    quality ingredients into a flavorful, frozen delicacy.
-                    <br className="mb-2" />
-                    All produce are grown and sourced locally. Our paletas are
-                    changed seasonally and uniquely created by our family.
-                    <br className="mb-2" />
-                    Order online for pickup or delivery within a 5-mile radius
-                    our Brooklyn location.
-                    <br className="mb-2" />
-                    Connect with us over social media and share PaletaPop!
-                    <PaletaSocial />
+                    <p>
+                      At{" "}
+                      <span className="text-pink-400 font-bold italic">
+                        ¡Paleta Pop!
+                      </span>
+                      , we’re bringing organic Mexican paletas from our kitchen
+                      to yours!
+                      <br className="mb-2" />
+                      Reconnecting and hybridizing our family recipes, each
+                      paleta is lovingly made with the intention to combine the
+                      highest quality ingredients into a flavorful, frozen
+                      delicacy.
+                      <br className="mb-2" />
+                      All produce are grown and sourced locally. Our paletas are
+                      also tastefully engineered by our very own family and
+                      friends.
+                      <br className="mb-2" />
+                      Order online for pickup or delivery within a 5-mile radius
+                      of our Brooklyn location.
+                      <br className="mb-2" />
+                      Connect with us over social media and share your
+                      <span className="text-pink-400 font-bold italic">
+                        ¡Paleta Pop!
+                      </span>
+                      <PaletaSocial />
+                    </p>
                   </div>
                 </>
               ),
