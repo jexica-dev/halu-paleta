@@ -17,13 +17,10 @@ export default function PaletaNav() {
     <div className="relative z-50">
       <div
         style={{ zIndex: "10" }}
-        // onClick={() => {
-        //   setModalOpen(true);
-        // }}
         className={
           !modalOpen
             ? "hidden w-screen h-screen fixed"
-            : "w-screen h-screen fixed   "
+            : "w-screen h-screen fixed  "
         }
       >
         <div
@@ -86,6 +83,7 @@ export default function PaletaNav() {
             />
           </span>
         </div>
+
         <div
           className="cursor-pointer w-28 h-28 rounded-full border-[13px] border-green-300 bg-yellow text-4xl"
           onClick={() => {
