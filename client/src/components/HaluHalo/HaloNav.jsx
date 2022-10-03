@@ -5,8 +5,9 @@ import haloAbout from "../../images/halu-about.svg";
 import haloCreate from "../../images/halu-create.svg";
 import haloFave from "../../images/halu-faves.svg";
 import { useState } from "react";
-import Halo from "../../images/halohalo.png";
+// import Halo from "../../images/halohalo.png";
 import HaluModal from "./HaluModal";
+import HaloCarousel from "./HaloCarousel";
 
 export default function HaloNav() {
   const [modalOpen, setModalOpen] = useState(false);
@@ -112,10 +113,12 @@ export default function HaloNav() {
             <img
               onClick={() => {
                 setModalData({
-                  title: "Favorite Toppings",
+                  title: "Favorite Combinations",
                   body: (
                     <>
-                      <div className="flex flex-col  w-full place-content-center"></div>
+                      <div className="flex flex-col  w-full place-content-center">
+                        <HaloCarousel />
+                      </div>
                     </>
                   ),
                 });
