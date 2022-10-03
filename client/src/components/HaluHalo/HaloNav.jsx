@@ -75,11 +75,17 @@ export default function HaloNav() {
             <img
               onClick={() => {
                 setModalData({
-                  title: "Newest Ingredients: Pandan Jelly",
+                  title: "A Tropical, Rainbow Sundae",
                   body: (
                     <>
                       <div className="  flex flex-col w-full items-center">
-                        <img src={pandan} alt="" width={300} />
+                        <p className=" text-4xl px-5">
+                          A national dessert from the Philippines, we share with
+                          you a a modern twist on a national ice cream sundae
+                          dessert. We mix the original ingredients with new
+                          flavors. Enjoy creating your new halo-halo
+                          masterpiece!
+                        </p>
                       </div>
                     </>
                   ),
@@ -108,10 +114,26 @@ export default function HaloNav() {
                           <form className="">
                             <div className="grid grid-cols-7 place-content-center text-lg">
                               <select className="col-span-3  bg-white px-4 leading-tight border border-black hover:bg-indigo-600 hover:text-white">
+                                <option value="ube">Ube</option>
+                                <option value="boba">Mochi</option>
+                                <option value="banana">Banana</option>
                                 <option value="pandan">Pandan Jelly</option>
-                                <option value="boba">Tapioca</option>
+                                <option value="coconut">Jackfruit</option>
+                                <option value="coconut">Chia Seeds</option>
+                                <option value="boba">Sago</option>
+                                <option value="coconut">Shaved Ice</option>
                                 <option value="coconut">Coconut Flakes</option>
+                                <option value="coconut">Gelatin Cubes</option>
+                                <option value="coconut">Ganache</option>
+                                <option value="coconut">Honey and Cream</option>
+                                <option value="coconut">Mangos</option>
+                                <option value="coconut">Mung Beans</option>
+                                <option value="coconut">Leche Flan</option>
+                                <option value="coconut">Condensed Milk</option>
                                 <option value="ube">Ube Ice Cream</option>
+                                <option value="ube">
+                                  Black Sesame Ice Cream
+                                </option>
                                 <option value="greentea">
                                   Green Tea Ice Cream
                                 </option>
@@ -124,7 +146,7 @@ export default function HaloNav() {
                               />
 
                               <div className="col-span-2 text-center p-3 border border-black hover:bg-indigo-600 hover:text-white ">
-                                Add to Cart
+                                Add to Order
                               </div>
                               <label className=" text-center p-3 border border-black">
                                 $4
