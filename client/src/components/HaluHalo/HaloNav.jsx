@@ -5,9 +5,10 @@ import haloAbout from "../../images/halu-about.svg";
 import haloCreate from "../../images/halu-create.svg";
 import haloFave from "../../images/halu-faves.svg";
 import { useState } from "react";
-// import Halo from "../../images/halohalo.png";
+import Halo from "../../images/halohalo.png";
 import HaluModal from "./HaluModal";
 import HaloCarousel from "./HaloCarousel";
+import pandan from "../../images/pandan.jpg";
 
 export default function HaloNav() {
   const [modalOpen, setModalOpen] = useState(false);
@@ -77,8 +78,8 @@ export default function HaloNav() {
                   title: "Newest Ingredients: Pandan Jelly",
                   body: (
                     <>
-                      <div className="  flex flex-col  w-full place-content-center">
-                        {/* <img src={Halo} alt="" width={350} /> */}
+                      <div className="  flex flex-col w-full items-center">
+                        <img src={pandan} alt="" width={300} />
                       </div>
                     </>
                   ),
@@ -97,7 +98,40 @@ export default function HaloNav() {
                   body: (
                     <>
                       <div className=" flex flex-col  w-full place-content-center">
-                        {/* <img src={Halo} alt="" width={350} />{" "} */}
+                        <img
+                          className="w-96 h-64 object-cover object-top"
+                          src={Halo}
+                          alt=""
+                          width="100%"
+                        />
+                        <div className="w-full h-96 pt-5 px-3">
+                          <form className="">
+                            <div className="grid grid-cols-7 place-content-center text-lg">
+                              <select className="col-span-3  bg-white px-4 leading-tight border border-black hover:bg-indigo-600 hover:text-white">
+                                <option value="pandan">Pandan Jelly</option>
+                                <option value="boba">Tapioca</option>
+                                <option value="coconut">Coconut Flakes</option>
+                                <option value="ube">Ube Ice Cream</option>
+                                <option value="greentea">
+                                  Green Tea Ice Cream
+                                </option>
+                              </select>
+                              {/* <div className="grid grid-rows-2"> */}
+                              <input
+                                className="text-center p-3 border border-black "
+                                type="text"
+                                placeholder="1"
+                              />
+
+                              <div className="col-span-2 text-center p-3 border border-black hover:bg-indigo-600 hover:text-white ">
+                                Add to Cart
+                              </div>
+                              <label className=" text-center p-3 border border-black">
+                                $4
+                              </label>
+                            </div>
+                          </form>
+                        </div>
                       </div>
                     </>
                   ),
