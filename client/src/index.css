@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import "~react-image-gallery/styles/css/image-gallery.css";
 
 @font-face {
   font-family: "ABC Whyte Inktrap";
@@ -34,6 +35,17 @@
   font-family: "ABC Viafont";
   src: url("../src/fonts/ABCViafont-Regular-Trial.otf");
   font-weight: normal;
+}
+
+.image-gallery-left-nav .image-gallery-svg,
+.image-gallery-right-nav .image-gallery-svg {
+  height: 53px;
+  width: 60px;
+  color: lightgray;
+}
+
+.image-gallery-content .image-gallery-slide .image-gallery-image {
+  max-height: calc(100vh - 350px);
 }
 
 body {
