@@ -104,8 +104,8 @@ export default function HaloNav() {
                 });
                 setModalOpen((prevState) => !prevState);
               }}
-              style={{ width: "900px" }}
-              className="-mt-3 z-10 cursor-pointer"
+              style={{ width: "900px", zIndex: 5 }}
+              className="-mt-3 cursor-pointer"
               src={haloCreate}
               alt=""
               srcset=""
@@ -126,7 +126,6 @@ export default function HaloNav() {
               }}
               className=" -mt-8 w-40 ml-40 cursor-pointer"
               src={haloFave}
-              x
               alt=""
               srcset=""
             />

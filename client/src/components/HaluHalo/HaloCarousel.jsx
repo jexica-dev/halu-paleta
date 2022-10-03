@@ -22,7 +22,7 @@ export default function HaloCarousel() {
 
   return (
     <>
-      <div className="w-fit">
+      <div className="w-full flex flex-col overflow-hidden">
         <ImageGallery
           showBullets={false}
           showPlayButton={false}
