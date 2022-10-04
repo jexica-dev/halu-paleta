@@ -64,7 +64,8 @@ export default function HaloNav() {
         </div>
         <Link to="/" exact>
           <img
-            className="absolute top-10 right-0 px-10 z-10"
+            style={{ zIndex: "5" }}
+            className="absolute top-10 right-0 px-10"
             src={haloLogo}
             alt="haluhalo logo"
           />
@@ -91,7 +92,8 @@ export default function HaloNav() {
                 });
                 setModalOpen((prevState) => !prevState);
               }}
-              className="cursor-pointer ml-10"
+              style={{ zIndex: "7" }}
+              className="cursor-pointer ml-10 "
               src={haloAbout}
               alt=""
               srcset=""
