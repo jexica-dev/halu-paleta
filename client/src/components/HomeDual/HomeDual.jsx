@@ -5,12 +5,11 @@ import PaletaHalf from "./PaletaHalf";
 export default function HomeDual() {
   return (
     <div className=" w-screen h-screen ">
-      <div className="relative inset-0 bottom-0 h-full lg:absolute lg:inset-x-0 lg:w-1/2 lg:h-full lg:float-left md:w-1/2 md:h-full md:float-left sm:w-full sm:h-128 ">
-        {/* <img src={halulogo} alt="" srcset="" /> */}
+      <div className=" inset-x-0 bottom-0 h-full absolute lg:inset-x-0 lg:w-1/2 lg:h-full lg:float-left sm:mb-1 ">
         <HaluHalf />
       </div>
 
-      <div className=" lg:w-1/2 lg:h-full lg:float-right md:w-1/2 md:h-full md:float-left sm:w-full sm:h-28 ">
+      <div className=" lg:w-1/2 lg:h-full lg:float-right w-full h-1/2 sm:mb-1 ">
         <PaletaHalf />
       </div>
     </div>

@@ -38,7 +38,7 @@ export default function PaletaNav() {
               : " fixed  w-screen h-screen bg-trp z-50 grid grid-cols-1 place-content-center items-center"
           }
         >
-          <div className="fixed  w-140 h-132 place-self-center bg-white  rounded-3xl">
+          <div className="fixed w-7/8 h-132 place-self-center bg-white lg:w-140 rounded-3xl md:w-3/4 sm:w-7/8 sm:mx-5 lg:px-0 md:px-0 px-0">
             {!modalOpen ? null : (
               <>
                 <div className="w-full relative ">
@@ -67,7 +67,12 @@ export default function PaletaNav() {
               body: (
                 <>
                   <div className="flex flex-col  w-full place-content-center">
-                    <img src={horchata} alt="" width={350} />{" "}
+                    <img
+                      className="px-14 pt-5"
+                      src={horchata}
+                      alt=""
+                      width="auto"
+                    />{" "}
                   </div>
                 </>
               ),

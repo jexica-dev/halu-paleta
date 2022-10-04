@@ -17,7 +17,7 @@ export default function HaluHalf() {
         <Link className="self-end mb-10" to="/Haluhalo">
           <img
             src={haluLogo}
-            className="hover:filter hover:bg-blend-exclusion"
+            className="hover:filter hover:bg-blend-exclusion px-5"
             // style={{ position: "absolute", top: "0" }}
             alt="logo"
             srcset=""

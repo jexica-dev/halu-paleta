@@ -43,10 +43,10 @@ export default function HaloNav() {
                 : " fixed  w-screen h-screen bg-trp z-50 grid grid-cols-1 place-content-center items-center"
             }
           >
-            <div className="fixed  w-140 h-132 place-self-center bg-white  rounded-3xl">
+            <div className="fixed w-7/8 h-132  place-self-center bg-white lg:w-140 rounded-3xl md:w-3/4 sm:w-7/8 sm:px-5 lg:px-0 md:px-0 px-0">
               {!modalOpen ? null : (
                 <>
-                  <div className="w-full relative ">
+                  <div className="w-full relative">
                     <button
                       onClick={() => {
                         setModalOpen(false);
@@ -64,10 +64,9 @@ export default function HaloNav() {
         </div>
         <Link to="/" exact>
           <img
-            className="absolute top-10 right-10"
+            className="absolute top-10 right-0 px-10 z-10"
             src={haloLogo}
-            alt=""
-            srcset=""
+            alt="haluhalo logo"
           />
         </Link>
         <div className="absolute right-0 pt-72">
@@ -78,10 +77,10 @@ export default function HaloNav() {
                   title: "A Tropical, Rainbow Sundae",
                   body: (
                     <>
-                      <div className="  flex flex-col w-full items-center">
-                        <p className=" text-4xl px-5">
+                      <div className=" flex flex-col w-full items-center h-full ">
+                        <p className=" text-3xl px-5 overscroll-auto ">
                           A national dessert from the Philippines, we share with
-                          you a a modern twist on a national ice cream sundae
+                          you a modern twist on a national ice cream sundae
                           dessert. We mix the original ingredients with new
                           flavors. Enjoy creating your new halo-halo
                           masterpiece!
@@ -128,6 +127,7 @@ export default function HaloNav() {
                                 <option value="coconut">Honey and Cream</option>
                                 <option value="coconut">Mangos</option>
                                 <option value="coconut">Mung Beans</option>
+                                <option value="boba">Greek Yogurt</option>
                                 <option value="coconut">Leche Flan</option>
                                 <option value="coconut">Condensed Milk</option>
                                 <option value="ube">Ube Ice Cream</option>
